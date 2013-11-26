@@ -213,3 +213,12 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+
+
+#############
+## my own stuff
+#############
+*.msi
+*.exe
+*.7z
