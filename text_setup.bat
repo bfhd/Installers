@@ -1,6 +1,6 @@
 REM Install text client:
 
-setup /v"/l*v client2.log /qn COMPANYNAME="ondemandtext" SECONDSEQUENCE=0 MSDOTNETFOUND=C:\Windows\Microsoft.NET\Framework\ MDAC28IE4SIG=C:\Windows\system32\shdocvw.dll CLIENT_VERSION_DIR=\"c:\Program Files\Winscribe\Winscribe Text\Client\7.0.0.0\"
+setup /v"/l*v client2.log /qn COMPANYNAME="WinscribeText" SECONDSEQUENCE=0 MSDOTNETFOUND=C:\Windows\Microsoft.NET\Framework\ MDAC28IE4SIG=C:\Windows\system32\shdocvw.dll CLIENT_VERSION_DIR=\"c:\Program Files\Winscribe\Winscribe Text\Client\7.0.0.0\"
 
 
 REM Copy connection string file
