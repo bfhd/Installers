@@ -1,0 +1,1 @@
+7z -a sites\test\* bin\Setup.exe bin\text_client.bat Sites\setup.7z
