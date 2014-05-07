@@ -1,5 +1,5 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\WinScribe\General]
-"WinScribeURL"="http://scribe-prod-01/winscribe/"
+"WinScribeURL"="http://mnudc-winscribe/winscribe/"
 "WorkingDirectory"="C:\\Program Files (x86)\\Winscribe\\Client"
