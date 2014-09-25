@@ -1,0 +1,7 @@
+﻿;!@Install@!UTF-8!
+RunProgram="setup.bat"
+InstallPath="c:\\temp"
+OverwiteMode="0"
+ExtractTitle="Decompressing..."
+GUIMode="1"
+;!@InstallEnd@!
