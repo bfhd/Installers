@@ -28,6 +28,7 @@ goto ERROR
 
 REM Windows XP
 :VER_XP
+echo Installing pre-requisites - please wait...
 start /wait dotNetFx40_Full_x86_x64.exe /q /norestart
 start /wait msiexec /i SSCERuntime_x86-ENU /passive
 start /wait msiexec /i %~dp0x86\minimum\vc_runtimeMinimum_x86 /passive ADDEPLOY=1
@@ -44,6 +45,7 @@ REM Check if 64 bit or 32 bit
 IF EXIST "%PROGRAMFILES(X86)%" (GOTO 64BIT) ELSE (GOTO 32BIT)
 
 :64BIT
+echo Installing pre-requisites - please wait...
 start /wait dotNetFx40_Full_x86_x64.exe /q /norestart
 start /wait msiexec /i SSCERuntime_x64-ENU /passive
 start /wait msiexec /i %~dp0x64\minimum\vc_runtimeMinimum_x64 /passive ADDEPLOY=1
@@ -52,6 +54,7 @@ start /wait msiexec /i %~dp0x64\additional\vc_runtimeAdditional_x64 /passive ADD
 goto END
 
 :32BIT
+echo Installing pre-requisites - please wait...
 start /wait dotNetFx40_Full_x86_x64.exe /q /norestart
 start /wait msiexec /i SSCERuntime_x86-ENU /passive
 start /wait msiexec /i %~dp0x86\minimum\vc_runtimeMinimum_x86 /passive ADDEPLOY=1
