@@ -32,7 +32,7 @@ start /wait dotNetFx40_Full_x86_x64.exe /q /norestart
 start /wait msiexec /i SSCERuntime_x86-ENU /passive
 start /wait msiexec /i %~dp0x86\minimum\vc_runtimeMinimum_x86 /passive ADDEPLOY=1
 start /wait msiexec /i %~dp0x86\additional\vc_runtimeAdditional_x86 /passive ADDEPLOY=1
-%~dp0x86\setup.exe /qb SERVERNAME="wscloudau2.winscribe.com" RSDKCENTRALDBMS="wscloudau2.winscribe.com" RSDKCENTRALDBNAME="wsr" RSDKCENTRALDBLOGONUSER="wsrsqluser" RSDKCENTRALDBLOGONPASSWORD="W1nscr1b3" RSDKLOCALCACHEPATH="C:\Documents and Settings\All Users\Application Data\RSDK" RSDKTARGETDIR="C:\Program Files\RecognoscoSDK\" RECOGNITIONADDRESS="net.tcp://wscloudau2.winscribe.com:8086/RcgServer"
+%~dp0x86\setup.exe /qb SERVERNAME="wscloudau2.winscribe.com" RSDKCENTRALDBMS="wscloudau2.winscribe.com" RSDKCENTRALDBNAME="wsr" RSDKCENTRALDBLOGONUSER="wsrsqluser" RSDKCENTRALDBLOGONPASSWORD="W1nscr1b3" RSDKLOCALCACHEPATH="C:\Documents and Settings\All Users\Application Data\RSDK" RSDKTARGETDIR="C:\Program Files\RecognoscoSDK\" RECOGNITIONADDRESS="net.tcp://wscloudau2.winscribe.com:8086/RcgServer" TRANSPORTTYPE="HTTPS"
 
 goto END
 
@@ -48,7 +48,7 @@ start /wait dotNetFx40_Full_x86_x64.exe /q /norestart
 start /wait msiexec /i SSCERuntime_x64-ENU /passive
 start /wait msiexec /i %~dp0x64\minimum\vc_runtimeMinimum_x64 /passive ADDEPLOY=1
 start /wait msiexec /i %~dp0x64\additional\vc_runtimeAdditional_x64 /passive ADDEPLOY=1
-%~dp0x64\setup.exe /qb SERVERNAME="wscloudau2.winscribe.com" RSDKCENTRALDBMS="wscloudau2.winscribe.com" RSDKCENTRALDBNAME="wsr" RSDKCENTRALDBLOGONUSER="wsrsqluser" RSDKCENTRALDBLOGONPASSWORD="W1nscr1b3" RSDKLOCALCACHEPATH="C:\ProgramData\RSDK" RSDKTARGETDIR="C:\Program Files\RecognoscoSDK\" RECOGNITIONADDRESS="net.tcp://wscloudau2.winscribe.com:8086/RcgServer"
+%~dp0x64\setup.exe /qb SERVERNAME="wscloudau2.winscribe.com" RSDKCENTRALDBMS="wscloudau2.winscribe.com" RSDKCENTRALDBNAME="wsr" RSDKCENTRALDBLOGONUSER="wsrsqluser" RSDKCENTRALDBLOGONPASSWORD="W1nscr1b3" RSDKLOCALCACHEPATH="C:\ProgramData\RSDK" RSDKTARGETDIR="C:\Program Files\RecognoscoSDK\" RECOGNITIONADDRESS="net.tcp://wscloudau2.winscribe.com:8086/RcgServer" TRANSPORTTYPE="HTTPS"
 goto END
 
 :32BIT
@@ -56,7 +56,7 @@ start /wait dotNetFx40_Full_x86_x64.exe /q /norestart
 start /wait msiexec /i SSCERuntime_x86-ENU /passive
 start /wait msiexec /i %~dp0x86\minimum\vc_runtimeMinimum_x86 /passive ADDEPLOY=1
 start /wait msiexec /i %~dp0x86\additional\vc_runtimeAdditional_x86 /passive ADDEPLOY=1
-%~dp0x86\setup.exe /qb SERVERNAME="wscloudau2.winscribe.com" RSDKCENTRALDBMS="wscloudau2.winscribe.com" RSDKCENTRALDBNAME="wsr" RSDKCENTRALDBLOGONUSER="wsrsqluser" RSDKCENTRALDBLOGONPASSWORD="W1nscr1b3" RSDKLOCALCACHEPATH="C:\ProgramData\RSDK" RSDKTARGETDIR="C:\Program Files\RecognoscoSDK\" RECOGNITIONADDRESS="net.tcp://wscloudau2.winscribe.com:8086/RcgServer"
+%~dp0x86\setup.exe /qb SERVERNAME="wscloudau2.winscribe.com" RSDKCENTRALDBMS="wscloudau2.winscribe.com" RSDKCENTRALDBNAME="wsr" RSDKCENTRALDBLOGONUSER="wsrsqluser" RSDKCENTRALDBLOGONPASSWORD="W1nscr1b3" RSDKLOCALCACHEPATH="C:\ProgramData\RSDK" RSDKTARGETDIR="C:\Program Files\RecognoscoSDK\" RECOGNITIONADDRESS="net.tcp://wscloudau2.winscribe.com:8086/RcgServer" TRANSPORTTYPE="HTTPS"
 
 
 
@@ -71,7 +71,7 @@ pause
 
 :ERROR
 REM del /q %~dp0\*.*
-color c0colo
+color c0
 echo ======================================================
 echo Error: Operating System not detected or not supported!
 echo ======================================================
