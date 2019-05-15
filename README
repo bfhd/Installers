@@ -8,5 +8,5 @@ This repository will help me track changes in the Text installer batch files.
 Requirements for each site:
 - A new connectionstring.xml will be needed.
 - Change the service code in MediScribe.Applications.Main.exe.config.
-- Change the WinscribeURL in Text.reg for each siet
+- Change the WinscribeURL in Text.reg for each site
 - Update HTI.Ribbonbridge.dll version if a new text client version is released
